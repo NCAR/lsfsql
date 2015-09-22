@@ -9,7 +9,7 @@ xlC128 $CFLAGS -llsf -lbat -o lsf_dump lsb_acct_dump.cc ofst.cc alist.cc jlist.c
 Example compile on Linux:
 
 ```
-CFLAGS="-I/ncar/opt/lsf/8.3/include/ -L/ncar/opt/lsf/8.3/linux2.6-glibc2.3-x86_64/lib/ "
+CFLAGS="-I/usr/local/lsf/8.3/include/ -L/usr/local/lsf/8.3/linux2.6-glibc2.3-x86_64/lib/ "
 g++ $CFLAGS -lnsl -llsf -lbat -o lsf_dump lsb_acct_dump.cc ofst.cc alist.cc jlist.cc lsf.cc lsf_dump.cc fdump.cc
 ```
 
