@@ -1,13 +1,13 @@
 Prerequisites:
 * Fully funtional LSF installation
-** Path to C include: $LSF_BINDIR/../../include
-** Path to LSF Libs: $LSF_LIBDIR
+  * Path to C include: $LSF_BINDIR/../../include
+  * Path to LSF Libs: $LSF_LIBDIR
 * Execution node must be licensed to run LSF commands (otherwise LSF's API calls will fail)
 * C++ compiler (tested on XL and GCC)
 
 Suggested:
 * SQL Server (tested with MySQL)
-** Server must be able to import CSV files. 
+  * Server must be able to import CSV files. 
 
 Example compile on AIX:
 ```
