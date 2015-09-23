@@ -1,7 +1,7 @@
 # lsfsql
 Export job accounting data from IBM Platform LSF to CSV files for SQL import. 
 The job data from LSF will have minimal transformations to ensure the CSV data
-is as close to the LSF data to allow easy reference to LSF's offical
+is as close to the LSF format as possible to allow easy reference to LSF's offical
 documentation. This allows the job information to be processed and analysed by
 other (unrelated) tools. An example SQL database schema is provided for
 reference.
