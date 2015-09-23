@@ -14,6 +14,7 @@ ACCT_ARCHIVE_TIME = 00:01
 Suggested:
 * SQL Server (tested with MySQL)
   * Server must be able to import CSV files. 
+  * Example SQL schema provided. All fieldnames are based directly on LSF's API reference
 
 Example compile on AIX:
 ```
