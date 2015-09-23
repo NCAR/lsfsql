@@ -4,7 +4,7 @@ Prerequisites:
   * Path to LSF Libs: $LSF_LIBDIR
   * LSF should be setup to roll the lsb.acct files
     * In lsb.parms to roll once a day, set the following:
-      * ```
+```
 ACCT_ARCHIVE_AGE = 1
 ACCT_ARCHIVE_TIME = 00:01
 ```
