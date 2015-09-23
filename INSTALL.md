@@ -2,7 +2,7 @@ Prerequisites:
 * Fully funtional LSF installation
   * Path to C include: $LSF_BINDIR/../../include
   * Path to LSF Libs: $LSF_LIBDIR
-  * LSF should be setup to roll the lsb.acct files
+  * LSF should be setup to roll the lsb.acct files (optional but highly suggested)
     * In lsb.parms to roll once a day, set the following:
 ```
 ACCT_ARCHIVE_AGE = 1
@@ -27,4 +27,6 @@ g++ -I$LSF_BINDIR/../../include -L$LSF_LIBDIR  -lnsl -llsf -lbat -o lsf_dump lsb
 ```
 
 Example usage:
-
+```
+bash scripts/mysql_import.sh "example" "$LSF_ENVDIR/../work/$cluster/logdir/archive/lsb.acct.1" /usr/local/bin/lsf_dump
+```

@@ -1,7 +1,6 @@
 #!/bin/bash
 #
 # Simple example script to dump lsf accounting and then import into SQL
-# This script assumes you used the default paths for LSF internally
 #
 [ -z "$1" -o -z "$2" -z "$3" ] && echo "$0 {lsf cluster name} {path to lsb.acct} {path to lsf_dump}"
 [ -f /etc/nolocal ] && echo "nolocal set. bailing!" && exit 1
@@ -12,7 +11,6 @@ umask 0027
 cluster="$1"
 fname="$2"
 lsfdump="$3"
-logd=$LSF_ENVDIR/../work/$cluster/logdir/archive/
 dst=/tmp/
 #It is expected that mysql user will have passwordless access to the database
 mysql_user=lsf
