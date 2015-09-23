@@ -28,5 +28,5 @@ g++ -I$LSF_BINDIR/../../include -L$LSF_LIBDIR  -lnsl -llsf -lbat -o lsf_dump lsb
 
 Example usage:
 ```
-bash scripts/mysql_import.sh "example" "$LSF_ENVDIR/../work/$cluster/logdir/archive/lsb.acct.1" /usr/local/bin/lsf_dump
+bash scripts/mysql_import.sh "example" "$LSF_ENVDIR/../work/$cluster/logdir/lsb.acct.1" /usr/local/bin/lsf_dump
 ```
